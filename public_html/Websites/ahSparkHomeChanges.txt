@@ -1,0 +1,89 @@
+/*****************CHANGES*****************/
+
+
+
+1. Add height width class and alt to <img> element
+	alt="demo-clip-path" width="140" height="140" class="clip-polygon"
+2. For list item background
+	#gallery li{
+		hide background-color
+		or change to rgba(0, 0, 0, 0);
+	}
+3. Change <p></p> item to a <span></span> item
+4. Add SVG element beneath <span> element (even though it looks funky...)
+		<svg class="clip-svg">
+				  <defs>
+					    <clipPath id="clip-svg-demo" clipPathUnits="objectBoundingBox">
+						      <polygon points="0.25 0, 0.75 0, 1 0.5, 0.75 1, 0.25 1, 0 0.5" />
+					    </clipPath>
+				  </defs>	
+		</svg>
+5. Add corresponding CSS
+		img {
+		  horizontal-align: middle;
+		  margin: 0 10px;
+		}
+
+		.clip-svg {
+		  width: 0;
+		  height: 0;
+		}
+
+		.clip-polygon {
+		  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+		  -webkit-clip-path: url("#clip-svg-demo");
+		  clip-path: url("#clip-svg-demo");
+		}
+		
+		/*****/
+		#hexagons a.hex-3 h2 {
+		    padding-top: 178px;
+		    font-size: 24px;
+		}
+		
+		#hexagons a.hex-3 h2 {
+		    font-size: 28px;
+		    line-height: 1em;
+		    font-weight: 400;
+		    text-transform: uppercase;
+		    padding: 258px 0 30px;
+		}
+		
+		
+		#hexagons a.hex-3 span {
+		    font-size: 13px;
+		}
+		
+		
+		#hexagons a.hex-3 span {
+		    border: 2px solid #fff;
+		    padding: 4px 14px 6px;
+		    font-size: 14px;
+		    line-height: 1em;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		}
+		
+		
+		/********************Clickable links on the actual picture********************/
+		X. Add <a href>
+			<a class="hex-3" href="(link location)" style="background:url(picture location) no-repeat center; background-size:cover;">
+				<h2>Title</h2>
+				<span class="lm">View Page</span>
+			</a>
+		/****************************************/
+		
+		
+		
+		
+/********************Main Page Changes********************/
+
+		Y. Add a new home page by duplicating the "how to build a webpage" and then change the main-header to this
+			.main-header {
+			    padding-top: 170px;
+			    height: 850px;
+			    background: linear-gradient(#4098B7, transparent 90%), linear-gradient(0deg, #000, transparent), #4098B7 url('../../../img/spark-light-bulb.jpg') no-repeat center;
+			    background-size: cover;
+			    color: white;
+/****************************************/

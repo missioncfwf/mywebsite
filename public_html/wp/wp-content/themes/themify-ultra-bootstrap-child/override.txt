@@ -1,0 +1,85 @@
+2) Overriding Parent Theme Template Files
+
+To override the template files in the parent theme, open the original template file and save a copy to the child theme folder with same file name and folder structure. Basically, the file structure has to match with the parent theme.
+
+FOR EXAMPLE:
+
+let's say you want to edit the loop.php file in the parent theme and it is stored in the "includes" folder
+open the loop.php file and save a copy in the "includes" folder of the child theme
+edit and save the loop.php in the child theme
+FOR ANOTHER EXAMPLE:
+
+let's say you want to edit the page.php
+open the page.php file and save a copy in the child theme
+edit and save the page.php in the child theme
+HERE ARE SOME OF THE TEMPLATE FILES THAT YOU CAN OVERRIDE:
+
+header.php
+footer.php
+index.php
+single.php
+page.php
+sidebar.php
+includes/loop.php
+includes/slider.php
+
+
+
+Child Theme functions.php (optional)
+
+If you need add additional PHP functions, add them in the functions.php file in the child theme folder. It will load before the parent theme functions.php file.
+
+<?php
+
+/* custom PHP functions below this line */
+
+
+
+/***************For the sake of bootstrap************************/
+
+Copy header.php file then Open header.php and, just after the title tag, add the following meta line. This is necessary to make the mobile-first behavior of Bootstrap to work properly.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+First, let’s open header.php and footer.php and add a div with class=”row” around the blog title and tagline
+
+<div class="row">
+		<h1><?php bloginfo( 'name' ); ?></h1>
+		<p><?php bloginfo( 'description' ); ?></p>
+	</div>
+    
+Last but not least, we need to define the grid columns for our content and side bar. Let’s open index.php and modify it as follows:
+
+
+<?php
+get_header();
+?>
+**<div class="row">
+	<div class="col-md-8">**
+<?php
+		if (have_posts()) :
+			while (have_posts()) : {
+					the_post();
+				        the_title();
+					echo( '<br />' );	
+					the_content();
+					echo( '<br />' );
+				}
+			endwhile;
+		endif;
+?>
+	**</div>
+	<div class="col-md-4">**
+		<?php get_sidebar(); ?>
+	**</div>
+</div>**
+<?php get_footer(); ?>
+
+
+We have added another div with class=”row” around the whole content and side bar. This tells Bootstrap that they should be placed inside the same row within the grid. We have also moved the code to generate the sidebar just before get_footer as we want the sidebar to float to the right of the content.
+
+Then we have wrapped the dynamically generated content within a div with class=”col-md-8″ and the dynamically generated sidebar in a div with class=”col-md-4″. This makes the content span 8 columns of the grid and the sidebar span 4 columns, for a total of 12.
+    
+
+/***************For the sake of bootstrap************************/

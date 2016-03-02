@@ -1,0 +1,99 @@
+html {
+    background: url(../img/bokeh.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	-webkit-filter: hue-rotate(150deg);
+	-moz-filter: hue-rotate(150deg);
+	-o-filter: hue-rotate(150deg);
+	filter: hue-rotate(150deg);
+
+}
+header{
+	height: 80px;
+}
+h1 {
+    font-family: 'Roboto';
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+	text-align: center;
+ 	padding-top: 100px;
+	color: #DFCA68;
+/*     height: 6.7em; */
+}
+h1, h3, h4, h5, h6 {
+/*     line-height: 1.4em; */
+    margin: 0 0 .4em;
+    word-wrap: normal;
+    font-weight: normal;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom:7.5em;
+}
+footer {
+	font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+	text-align: center;
+    padding-top: 260px;
+ 	clear: both;
+/*     border-top: 1px solid rgba(0,0,0,.1); */
+/*     text-align: center; */
+    padding: 2.5em 0 0;
+	color: #6B552D;
+	color: rgba(0, 0, 0, 0.4); 	
+}
+
+footer p {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+
+
+
+
+
+
+h2 a {
+	margin: 0 auto;
+     color: #DFCA68;
+    display: inline-block;
+    height: 18.018px;
+     overflow-wrap: break-word;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 143.745px;
+    word-wrap: break-word;
+    -webkit-column-rule-color: #DFCA68;
+    -webkit-font-smoothing: antialiased;
+    -webkit-locale: "en-US";
+    perspective-origin: 92.5535px 20.106px;
+    -webkit-text-decorations-in-effect: none;
+    -webkit-text-emphasis-color: #DFCA68;
+    -webkit-text-fill-color: #DFCA68;
+    -webkit-text-stroke-color: #DFCA68;
+    transform-origin: 92.5535px 20.106px;
+    border: 1.5015px solid #DFCA68;
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal bold normal 19.2px / 19.2px Roboto;
+	margin: 9.6px 3.84px 9.6px 0px; 
+    outline: #DFCA68 none 0px;
+    padding: 9.6px 19.2px;
+    transition: background-color 0.3s ease 0s, background-color 0.3s ease 0s, border 0.3s ease 0s, color 0.3s ease 0s;
+    -webkit-border-after: 1.5015px solid #DFCA68;
+    -webkit-border-before: 1.5015px solid #DFCA68;
+    -webkit-border-end: 1.5015px solid #DFCA68;
+    -webkit-border-start: 1.5015px solid #DFCA68;
+    -webkit-transition: background-color 0.3s ease 0s, background-color 0.3s ease 0s, border 0.3s ease 0s, color 0.3s ease 0s;
+    -webkit-transform-origin: 92.5535px 20.106px;
+ 	
+}/*#A_1*/
+

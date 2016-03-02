@@ -1,0 +1,297 @@
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 65%;
+  margin: 50px auto 0;
+  padding: 0 5%;
+} 
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+.header {
+  margin: 0 0 30px 0;
+  padding: 5px 0 50px 0;
+  width: 100%;
+  margin-bottom: 50px;
+/*   background-image: url('../img/spark-light-bulb.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; */
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+.section {
+	padding-top:3em;
+}
+
+
+/**********************************
+FOOTER
+***********************************/
+.section {
+	padding-bottom: 4em;
+	
+}
+
+.footer {
+	
+  margin: 0 0 50px 0;
+  padding: 5px 0 0 0;
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  color: #ccc;
+
+	
+
+/*   background-color: black; */
+  bottom: 0;
+  height: 30px;
+  left: 0;
+  margin-top: auto;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+/*   opacity: 0.2; */
+}
+
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+#gallery li {
+  float: left; 
+  width: 45%;
+  max-width: 30%;
+/*   max-height: 4em; */
+  margin: 2.5%; 
+  background-color: rbga(0,0,0,0,0.5);
+  color: #bdc3c7;
+  padding: 0 6%;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #0A0501;
+  background-color: rgba(247, 189, 68, 0.64);
+  
+  
+}
+
+#gallery li a {
+  background-color: #000;
+}
+/**********************/
+#ex1 {
+
+	text-align: center;
+	  -webkit-clip-path: polygon(0 33.33%, 0 66.67%, 33.33% 100%, 66.67 100%, 100% 66.67%, 100% 33.33%, 66.67% 0 33.33% 0);
+  clip-path: polygon(0 33.33%, 0 66.67%, 33.33% 100%, 66.67 100%, 100% 66.67%, 100% 33.33%, 66.67% 0 33.33% 0);
+  -webkit-clip-path: url("#clip-shape"); /* required for Webkit/Blink browsers if you're using only inline SVG clipping paths, but not CSS clip-path */
+  clip-path: url("#clip-shape");
+
+}
+/********************/
+
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  float:left;
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info .phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info .mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info .twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  margin:0;
+/*   background: #141D18 url(../img/spark-light-bulb.jpg);
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #999; */
+}
+
+/* green header */
+header {
+  background: rgba(0,0,0,0.5);
+  border-color: #599a68;
+  padding:0 0 5em;
+}
+
+/* nav background on mobile */
+nav {
+  background: #000;
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+h2 {
+  color: #F9CF08;
+}
+
+/* colored semi-transparent background for hard-to-read text*/
+.legible {
+    background-color: rgba(158,92,24,0.48);
+    color: #fff;
+    max-width: 40em;
+  float:right;
+}
+
+.coloredTitle {
+	color: #F9CF08;
+}
+/* links */
+a {
+  color: #F9CF08;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #F9CF08;
+}
+
+
+
+
+
+
+
+
+

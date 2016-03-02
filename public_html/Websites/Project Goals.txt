@@ -1,0 +1,25 @@
+/****************/
+Tasks
+/****************/
+
+	1. Change light bulb background so that section, drops down past the header
+	2. fill out one job application
+	3. fill out the second job applications
+	/****************/
+	
+	2. fill out one job application
+	3. fill out the second job application
+	4. Figure out how to set up dropbox with git later in the future
+	/****************/
+	Tasks
+	/****************/
+	5. change  pics in 1 to either 12em
+	6. set pics as options for going to a different pages options.
+	7. Develop Sitemap and figure out how to plan it
+	8. add min-height: 16em; to .fill on line 168
+	9. add footer border top on template 1/index.html
+	
+	********************
+	10/20/2015
+	*******************
+		1. create hover so that joshuaDharman landing page reveals wordpress and html option

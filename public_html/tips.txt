@@ -1,0 +1,67 @@
+Just so there is something concrete to discuss, say I have this color scheme: http://www.lavishbootstrap.com/
+There are many articles about how to pick a coherent color scheme based on complementary colors, monochromatic colors, etc. however, once I have a set of colors, how do I decide which color is the header, 
+which color is link, which is background and text. Even if I decide that I want a light on dark or dark on light scheme, putting rest of the colors on screen can still make the site look ugly.
+
+Are there rules of thumb or general guidelines that help one decide which colors go where?
+
+
+
+
+
+
+
+
+
+
+I see a lot of people commenting things like "there's no right answer" which I (sort of) disagree with... There's certainly at least one right answer, maybe a few and I'm sure there's a bunch of wrong answers too, 
+	good design is about reaching the best possible solution based on the resources and time available to you And surely such a solution is going to outweigh several alternatives. You've given us a colour palette 
+		for the purposes of discussion so, I'm going to do just that and answer your question based on the supplied colour palette. (Given I haven't seen the layout you're working with this is still gonna be 
+			pretty broad but it'll have some process for you to follow.)
+
+So, the first colours I like to pick when creating a colour scheme in a web project are the background for the body and the main text colour. It's normally a good idea to pick the two most contrasting colours to 
+	fill these roles and your example palette is no exception so in this case the colours are #DEE1DD and #28363D. Now we have to decide which to use for the text and which to use for the background and in most 
+		cases I try to use the lighter colour for the background and the darker for the text. There's been considerable research to show we read a dark colour on a light colour more easily than a light colour on 
+			dark so that's what I generally default to unless there's a reason for a darker look (like you're doing a website for a heavy metal band or something... I'm gonna assume that's not the case here). 
+				So, the background to our body will be #DEE1DD and the text colour will be #28363D.
+
+Next I like to move on to what I think is the next most important item, which is hyperlinks. You want a colour that contrasts enough from the background as to not be difficult to read but also contrasts enough 
+	from the text in order to be noticeable. In this example most of the lighter greens will be illegible on the light background so the most obvious answer is #2F575D.
+
+Next you alluded to a header that needed to be coloured, and again we need it to contrast from the background. In the interest of minimalism I try and reuse the colours I've already used in the body, and in this 
+	case the text colour is probably too dark to be filling large amounts of space so I'd be inclined to aelect #2F575D and for all of the above reasons I'd use the background body colour #DEE1DD To fill in any 
+		text or links in the header.
+
+Finally I cover non essential design elements like hover states last and we've got a few different greens left to pick from. Again this probably needs to contrast from the background enough as the links don't 
+	disappear when rolling over them so if be inclined to go with #658B6F ...
+
+And ... Voila! You now have a (basic) 4 colour scheme. I hope this process helps you as much as it helps me :) !
+
+ 
+ 
+ 
+ 
+body background	 #DEE1DD
+disabled input & button background, input addon background, nav & tabs & pagination link hover background, jumbotron background	 #C4CDC1 	
+disabled link color, input placeholder color, dropdown header color, navbar inverse & link color	 #98AEAD 	
+nav tab link hover color	 #6D9197
+link color, primary button background, pagination active background, progress bar background, label background, panel heading color	 #658B6E 	
+text color, legend color, dropdown link color, panel text color, code color	 #2F575D 	
+navbar inverse background	 #28363D
+
+
+
+
+
+
+The website you linked to is showing you how to use those colors:
+
+#28363D for the active state 
+#2F575D as the navigation background 
+#DEE1DD as background 
+#C4CDC1 as banner ...
+I normally splash my own color in the design - even if I know they are slightly wrong - at least I have roughly two solid colors or at least one. Then when I have have laid out my idea, 
+I take my primary color (the one I have used the most) and add it to a color wheel. That way I replace my other colors. Or I try to find some images that have most of my original colors.
+
+I have read articles that say, take an image and design your work based on those color, I can not do that. I create my own design, with at least one color in mind and then use the techniques of color theory
+
+hope it helps
